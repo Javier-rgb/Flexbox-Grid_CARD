@@ -14,3 +14,41 @@ body {
     display: flex;
     flex-flow: column;
 }
+
+img {
+    width: 320px;
+    height: 200px;
+    align-self: center;
+    margin-block-end: 15px;
+}
+
+h1, p, .buttons {
+    margin-block-start: 5px;
+    margin-inline-start: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    color: gray;
+}
+
+.content, .buttons {
+    margin-block-start: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: purple;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-inline-end: 25px;
+}
+
+button:hover{
+    cursor: pointer;
+}
