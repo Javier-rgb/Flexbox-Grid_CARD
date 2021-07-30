@@ -1,4 +1,4 @@
-/* Flexbox */
+/* Grid */
 
 * {
     box-sizing: border-box;
@@ -10,12 +10,22 @@ html {
     font-size: 62.5%;
 }
 
+/*body {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+}*/
+
 body {
-    display: flex;
-    flex-flow: column;
+    display: grid;
+    grid-template-areas: "img"
+                         "h1"
+                         "p"
+                         "content"
+                         "buttons";
 }
 
 img {
+    grid-area: img;
     width: 320px;
     height: 200px;
     align-self: center;
@@ -29,11 +39,21 @@ h1, p, .buttons {
 
 h1 {
     font-size: 2rem;
+    grid-area: h1;
 }
 
 p {
     font-size: 1.6rem;
     color: gray;
+    grid-area: p;
+}
+
+.content {
+    grid-area: content;
+}
+
+.buttons {
+    grid-area: buttons;
 }
 
 .content, .buttons {
